@@ -1,0 +1,415 @@
+
+body{
+    background-color: black;
+    color: white;
+    margin-bottom: 200px;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: rgb(37, 37, 37);
+    position: relative;
+    width: 100%;
+}
+
+.navbar-toggler{
+    margin-right: 45%;
+}
+
+.play{
+    position: relative;
+    position: absolute;
+    height: 56px;
+    right: 0;
+    top: 0;
+    background-color:#857a59 ;
+    opacity: .8;
+    color: white;
+    border: 1px solid #d0a137;
+}
+
+
+.play div:nth-child(1){
+    background-color: #d0a137;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    width: 0;
+    left: 0;
+}
+
+.play div:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    background-color: #d0a137;
+    height: 2px;
+    width: 0;
+    left: 0;
+}
+
+.play:hover.play div:nth-child(1), .play:hover.play div:nth-child(2){
+    transition: all .4s ease-in;
+    width: 100%;
+}
+
+
+.nav-item{
+    position: relative;
+}
+
+.nav-item p{
+    margin-bottom: 0;
+}
+
+.nav-item a i{
+    font-size: 20px;
+}
+
+.dropdown{
+    position: absolute;
+    top: -300px;
+    min-width: 250px;
+    z-index: 1;
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.dropdown a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 12px 0 12px 0;
+}
+
+.showcase{
+    height:500px;
+    width:100%;
+    position: relative;
+    background-image: url(./tout-hero-vg-s3-desktop.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.ad{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.ad h2{
+    margin-left: 30px;
+}
+
+ h4{
+    letter-spacing: 3px;
+}
+
+.logo{
+    display: inline;
+    height: 35px;
+    width: 90px;
+}
+
+.showcase-2{
+    margin: 0;
+}
+
+.showcase-2 .row .col div{
+    display: flex;
+    margin: 10px;
+}
+
+.showcase-2 .row .col div img{
+    margin: 0 20px 0 10px;
+}
+
+.col{
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+}
+
+
+.filter img{
+    height: 25px;
+    width: 25px;
+}
+.filter span{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.slider{
+    overflow: hidden;
+    max-width: 90%;
+    margin: auto;
+}
+
+.slider img{
+    width: 200px;
+    height: 110px;
+}
+
+.slider div{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.slider-container{
+    position: relative;
+}
+
+
+.slider-container i{
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+}
+
+.fa-chevron-left{
+    left: 30px;
+}
+
+
+.fa-chevron-right{
+   right: 20px;
+}
+
+.get-game{
+    overflow: hidden;
+    text-align: center;
+}
+
+.get-game h4{
+    margin: 50px;
+}
+
+.game div{
+   height: 250px;
+    width: 250px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.game img{
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+}
+
+.game p{
+    bottom: 5px;
+    position: absolute;
+    font-size: 18px;
+    margin: auto;
+}
+
+.game div:nth-child(1){
+    border: 1px solid yellow;
+}
+
+.game div:nth-child(4){
+    border: 1px solid rgb(255, 255, 0);
+    color: black;
+}
+
+.game div:nth-child(5){
+    width: 600px;
+    height: 120px;
+}
+
+
+.game div:nth-child(5) p{
+    right: 10px;
+    top: 10px;
+    max-width: 40%;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.essentials a{
+    text-decoration: none;
+    color: darkgray;
+    letter-spacing: 3px;
+    display: block;
+}
+
+.line-container{
+    margin: 30px;
+    position: relative;
+}
+
+
+.line div div{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    top: -2.5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.line div:nth-child(3) div{
+    right: 0;
+}
+
+.line div{
+    height: 1px;
+    position: relative;
+    width: 100px;
+    background-color: lightgray;
+}
+
+.line div:nth-child(2){
+    height: 2px;
+}
+
+
+.brands div img{
+    height: 35px;
+    width: 141px;
+}
+
+.brands div{
+    margin: 15px;
+}
+
+.brands div:nth-child(3) img{
+    height:45px;
+    width: 56px;
+    margin:0 42.5px 0px 42.5px;
+}
+
+.rating{
+    margin-top: 30px;
+}
+
+
+.rating div:nth-child(2) img{
+    margin: 30px;
+    height: 154px;
+    width: 260px;
+}
+
+
+@media (max-width: 1250px) {
+    .game div:nth-child(4){
+        width:500px ;
+        height: 150px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .essentials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     
+    .showcase{
+        height:370px;
+        width:100%;
+        position: relative;
+    }
+
+}
+
+@media (max-width:800px) {
+  
+    
+    .showcase{
+        height:800px;
+        width:100%;
+        position: relative;
+        background-image: url(./mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .game div{
+        margin-left: 0;
+    }
+
+
+    .ad{
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .navbar{
+        position: fixed;
+        z-index: 2;
+    }
+
+    .navbar-toggler{
+        margin-right: 100px;
+    }
+
+    .learn, .watch{
+        width: 250px;
+    }
+
+    .ad h2{
+        margin: 0;
+    }
+}
+
+
+
+
+@media (max-width:479px) {
+   .brands div img{
+       height: 40px;
+       width: 90px;
+   }
+
+   .brands div:nth-child(3) img{
+        height:40px;
+        width: 46px;
+        margin: 0 22px 0 22px  ;
+   }
+
+    .rating div:nth-child(2) img{
+        margin: 30px 0 0 0 ;
+    }
+    .showcase{
+        height:500px;
+        width:100%;
+        position: relative;
+        background-image: url(./mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width:501px){
+    .showcase{
+        height:700px;
+        width:100%;
+        position: relative;
+        background-image: url(./mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width:377px){
+    .brands{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

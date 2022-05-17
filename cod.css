@@ -412,4 +412,53 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
+    .companies{
+        padding: 0;
+    }
+}
+
+
+@media (max-width:529px){
+    .slider{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+       overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+  
+    
+    .slider-container i{
+        display: none;
+    }
+
+    .slider img{
+        width: 100px;
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    .slider div{
+        display: flex;
+        margin-top: 10px;
+    }
 }

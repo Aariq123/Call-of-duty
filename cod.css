@@ -38,6 +38,12 @@ nav{
     left: 0;
 }
 
+.slider-container > div{
+    width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .play div:nth-child(2){
     position: absolute;
     bottom: 0;
@@ -145,14 +151,9 @@ nav{
     margin-left: 5px;
 }
 
-.slider{
-    overflow: hidden;
-    max-width: 90%;
-    margin: auto;
-}
 
 .slider img{
-    width: 200px;
+    width: 180px;
     height: 110px;
 }
 
@@ -323,6 +324,13 @@ footer{
         position: relative;
     }
 
+    
+    .slider-container > div{
+        width: 800px;
+        margin: auto;
+        overflow: hidden;
+    }
+
 }
 
 @media (max-width:800px) {
@@ -366,7 +374,21 @@ footer{
 }
 
 
+@media (max-width:900px){
+    .slider-container > div{
+        width: 600px;
+        margin: auto;
+        overflow: hidden;
+    }
+}
 
+@media (max-width:702px) {
+    .slider-container > div{
+        max-width: 550px;
+        margin: auto;
+        overflow: hidden;
+    }
+}
 
 @media (max-width:479px) {
    .brands div img{
@@ -416,19 +438,28 @@ footer{
     .companies{
         padding: 0;
     }
+    .game div p{
+        font-size: 16px;
+    }
 }
 
 
-@media (max-width:529px){
+@media (max-width:650px){
+    .slider-container > div{
+        width: 90%;
+        margin: auto;
+    }
+
     .slider{
         display: flex;
         flex-direction: column;
         height: 300px;
-       overflow-y: scroll;
+        overflow-y: scroll;
+        margin: auto;
     }
 
     ::-webkit-scrollbar {
-        width: 10px;
+        width:7px;
       }
       
       /* Track */
